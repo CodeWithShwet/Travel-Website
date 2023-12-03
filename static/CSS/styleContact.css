@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#form-container {
+  min-height: 90vh;
+  margin-top: -8px;
+  background: rgba(0, 0, 1, 0.4) url("/static/contactbg/bgcontact8.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.contactHeading {
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: 3.4rem;
+  padding: 10px;
+  text-align: center;
+  margin: 6px;
+}
+
+.formClass {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputClass {
+  font-family: "Libre Baskerville", serif;
+  border: 2px solid white;
+  font-size: 16px;
+  width: 44%;
+  border-radius: 6px;
+  outline: none;
+  margin: 10px;
+  padding: 12px;
+}
+.inputClass:hover {
+  border: 2px solid yellow;
+}
+
+.submit-btn {
+  margin-top: 13px;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 19px;
+  border-radius: 8px;
+  padding: 8px 18px;
+  border: 2px solid rgb(211, 62, 3);
+  font-family: "Unna", serif;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(211, 62, 3);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+}

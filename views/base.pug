@@ -1,0 +1,55 @@
+//- index.pug
+doctype html
+html
+  head
+    title The Home Of Adventurers 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    block scripts
+    block style    
+  body
+    block content
+
+    block foot 
+      footer#footer
+        div.footer-top 
+            div.contact-info
+                p.info-text For More Information Contact -
+                p.info-text 
+                    <i class="fa-solid fa-phone info-icon"></i> 123-456-8989 
+                p.info-text 
+                    <i class="fa-solid fa-envelope info-icon"></i> www.thehomeofadventurers.com 
+                   	
+
+            div.newsletter 
+                div.newsletter-info 
+                    p.info-text Subscribe to our newsletter for more travel and tour updates! 
+                    form(action="/", method="get", class="myForm") 
+                        input(type="email" class="myinput" name="email" id="email" placeholder="Enter your email")
+                        button.btn-submit.color-btn Sign up 
+
+        div.socials 
+            div.social-Box 
+            div.social-icon 
+                ul.social-list 
+                    li.icon-style 
+                        a(href="https://www.facebook.com")
+                            <i class="fa-brands fa-facebook icon-size"></i>
+                            
+
+                    li.icon-style
+                        a(href="https://www.instagram.com")         
+                            <i class="fa-brands fa-instagram icon-size"></i>
+                            
+
+                    li.icon-style 
+                        a(href="https://www.twitter.com")          
+                            <i class="fa-brands fa-square-x-twitter icon-size"></i>
+
+
+                        
+        div.line-break 
+            -   
+        div.footer-bottom 
+            p Copyright &copy; 2023 - www.thehomeofadventurers.com - All Rights Reserved     
+     
+            

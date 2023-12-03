@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1029px) {
+  .navList {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: 371px;
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+  }
+
+  .rightNav {
+    text-align: center;
+  }
+
+  #search {
+    margin: 6px;
+    width: 100%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .h-nav-resp {
+    height: 70px;
+  }
+
+  .v-class-resp {
+    opacity: 0;
+  }
+
+  .text-big {
+    min-width: 95vw;
+    font-size: 4.3rem;
+  }
+
+  .text-small {
+    font-size: 2.5rem;
+  }
+
+  .bookContainer {
+    flex-direction: column;
+  }
+
+  .inner-book-container {
+    margin: 16px;
+  }
+
+  .service-section {
+    flex-direction: column;
+  }
+
+  .services-box {
+    width: 75%;
+  }
+
+  /* Tour section */
+  .tour-section .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tourCard {
+    width: 75vw;
+  }
+
+  .imgBox {
+    height: 200px;
+  }
+
+  .subText {
+    font-size: 2.7rem;
+  }
+}

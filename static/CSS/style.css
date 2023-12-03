@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Patua+One&family=Unna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27%;
+}
+
+#logo img {
+  width: 20%;
+  border-radius: 150px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  cursor: pointer;
+}
+
+.navList {
+  width: 94%;
+  display: flex;
+  align-items: center;
+}
+
+.navList li {
+  list-style: none;
+  padding: 8px 20px;
+}
+
+.navList li a {
+  color: white;
+  padding: 8px 3px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Unna", serif;
+}
+
+.navList li a:hover {
+  color: yellow;
+  text-decoration-line: underline;
+}
+
+.rightNav {
+  padding: 0px 27px;
+  width: 33%;
+  text-align: right;
+}
+
+#search {
+  width: 65%;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 6px;
+}
+
+.background {
+  background: rgba(0, 0, 1, 0.4) url("/static/images/image4.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+#firstSection {
+  height: 100vh;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 70%;
+  margin: auto;
+  height: 86vh;
+}
+
+.text-big {
+  text-align: center;
+  min-width: 85vw;
+  font-size: 4rem;
+  color: white;
+  font-family: "Caprasimo", cursive;
+}
+
+.text-small {
+  margin: 13px;
+  color: white;
+  font-size: 1.9rem;
+  font-family: "Caprasimo", cursive;
+}
+
+.btn-sm {
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 13px;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 2px solid white;
+  font-family: "Unna", serif;
+  cursor: pointer;
+}
+
+.btn-sm:hover {
+  border: 2px solid rgb(245, 134, 70);
+  background-color: rgb(245, 134, 70);
+}
+
+.buttons .btn {
+  background: red;
+  font-size: 15px;
+  border-radius: 13px;
+  border: 2px solid yellow;
+  margin: 0px 6px;
+  padding: 11px 27px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.sectionHeading {
+  font-family: "Patua One", cursive;
+  font-size: 2.6rem;
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* Booking Section */
+.bookContainer {
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 121px;
+  position: absolute;
+  bottom: -70px;
+  background: rgba(48, 48, 48, 0.9);
+}
+
+.book-heading {
+  margin-left: 30px;
+  font-size: 1.6em;
+  font-family: "Unna", serif;
+  padding: 8px 14px;
+  text-shadow: 0px 1px 5px yellow;
+  color: white;
+}
+
+.inner-book-container {
+  margin: 0px 35px;
+}
+
+.mybookinput-Class {
+  font-family: "Libre Baskerville", serif;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 6px;
+  padding: 12px 17px;
+  text-align: center;
+  margin: 0px 18px;
+  font-size: 14px;
+}
+
+.book-btn {
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  background-color: #f15b14;
+  border: white;
+  border-radius: 5px;
+  font-size: 19px;
+  padding: 8px 21px;
+  margin: 4px 12px;
+  font-weight: bold;
+}
+
+.select-color {
+  color: #717171;
+}
+.option-color {
+  color: black;
+}
+
+.book-btn:hover {
+  background-color: #5514f1;
+}
+
+/* Service Section */
+.services-container {
+  margin-top: 33px;
+}
+.service-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-box {
+  border-radius: 15px;
+  margin: 25px 25px;
+  background-color: #eeeede;
+  padding: 34px;
+}
+
+.color-btn:hover {
+  border: 0;
+  background-color: #f2f532;
+  color: black;
+  font-weight: bold;
+}
+
+/* Transition In Service Box */
+.transition-All {
+  transition: backgroung-color, border-bottom, 1s, ease-in-out;
+}
+.T-Class1:hover {
+  background-color: rgb(224, 199, 248);
+  box-shadow: 10px 10px 5px blueviolet;
+}
+.T-Class2:hover {
+  box-shadow: 10px 10px 5px red;
+  background-color: rgb(252, 208, 208);
+}
+.T-Class3:hover {
+  background-color: rgb(209, 243, 209);
+  box-shadow: 10px 10px 5px green;
+}
+
+.subText {
+  margin: 6px;
+  padding: 5px 10px;
+  font-family: "Unna", serif;
+  text-align: center;
+  font-size: 28px;
+}
+
+.subPara {
+  padding: 0px 1px;
+  text-align: center;
+}
+
+.imgFluid img {
+  width: 289px;
+  display: block;
+  margin: auto;
+}
+
+.tour-section {
+  padding: 3px 9%;
+  margin-bottom: 100px;
+}
+
+.tour-section .cardContainer {
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 20px;
+}
+
+.tourCard {
+  margin-bottom: 8px;
+  padding-bottom: -46px;
+  padding: 2px 5px;
+  border-radius: 41px;
+  border: 2px solid rgb(202, 202, 202);
+  background-color: #fafaf7;
+  transition: transform 0.5s;
+}
+
+.tourCard:hover {
+  box-shadow: 0 5px 10px rgb(0 90 255);
+  transform: scale(1.1);
+}
+
+.imgBox {
+  height: 155px;
+}
+
+.imgBox img {
+  padding-top: 12px;
+  display: block;
+  margin: auto;
+  height: inherit;
+}
+
+.btn-style {
+  background-color: rgb(225 225 225);
+  padding: 8px 3px;
+  display: block;
+  margin: 15px auto;
+  width: 31%;
+  border: 2px solid white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: "Unna", serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #05061a;
+  color: white;
+  margin-top: 15px;
+  padding: 30px;
+}
+
+.footer-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-text {
+  margin-top: 20px;
+  font-family: "Unna", serif;
+  font-size: 20px;
+}
+.info-icon {
+  vertical-align: middle;
+  padding: 0px -2px;
+}
+
+.myinput {
+  border: 2px solid white;
+  padding: 5px 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: white;
+  padding: 3px 8px;
+  margin: 0px 12px;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  border: 2px solid rgb(245, 134, 70);
+  background-color: rgb(245, 134, 70);
+}
+
+.social-list {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.social-list li {
+  margin: 20px 20px;
+  padding: 13px 15px;
+  list-style: none;
+}
+.social-list li a {
+  text-decoration: none;
+}
+
+.icon-style {
+  border-radius: 36px;
+  background-color: #a30d0d;
+}
+
+.icon-style:hover {
+  background-color: blue;
+}
+
+.icon-size {
+  color: white;
+}
+
+.line-break {
+  height: 3px;
+  margin: 0px 37px;
+  background-color: #47475a;
+}
+
+.footer-bottom {
+  font-family: "Unna", serif;
+  height: 5vh;
+  vertical-align: bottom;
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  top: 13px;
+}
+
+.line {
+  width: 30px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}

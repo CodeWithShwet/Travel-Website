@@ -1,0 +1,19 @@
+extends base.pug 
+
+block style 
+    style 
+        include ../static/CSS/style.css 
+        include ../static/CSS/styleContact.css 
+        include ../static/CSS/resp.css 
+
+block content 
+  div#form-container
+      h1.contactHeading Contact Us
+      form(class="formClass" action="/contact", method="post") 
+        div.input-container  
+        input(type="text", class="inputClass", name="name", id="name", placeholder="Enter name")
+        input(type="email", class="inputClass", name="email", id="email", placeholder="Enter email")
+        input(type="number", class="inputClass", name="phone", id="phone", placeholder="Enter phone number")
+        input(type="message", class="inputClass", name="message", id="message", placeholder="Send a message")
+
+        button.submit-btn Submit         

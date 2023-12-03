@@ -1,0 +1,143 @@
+extends base.pug 
+
+block style 
+    style 
+        include ../static/CSS/style.css 
+        include ../static/CSS/resp.css 
+      
+        
+        
+block content 
+    nav.navbar.background.h-nav-resp
+            ul.navList.v-class-resp  
+                div#logo
+                    img(src="/static/images/logo4.jpg", alt="site logo")
+                li #[a(href="/") Home ]     
+                li #[a(href="/") About ]
+                li #[a(href="/") Services]
+                li #[a(href="/") Tours ]
+                li #[a(href="/contact") Contact Us]
+            div.rightNav.v-class-resp 
+                 <input type="search" name="search" id="search">
+                 <button class="btn-sm color-btn">Search</button> 
+            div.burger 
+                div.line   
+                div.line           
+                div.line                          
+                 
+
+    section#firstSection.background 
+        div.box-main 
+                h1.text-big The Home Of Adventurers 
+                p.text-small  Go where your heart takes you!
+        
+
+        div.bookContainer 
+            h3.book-heading Choose Your Trip!
+            div.inner-book-container 
+                form(class="myform" action="/", method="get")  
+                    input(type="text" class="mybookinput-Class" id="mydestination" name="destination" placeholder="Destination") 
+                
+                    select(name="duration" id="myduration" class="mybookinput-Class select-color") 
+                        option.option-color(value) Duration              
+                        option.option-color(value="5 days") 5 Days              
+                        option.option-color(value="1 week" 1 Week) 1 Week            
+                        option.option-color(value="1 month" 1 Month) 1 Month             
+                        option.option-color(value="3 months" 3 Month)  3 Months
+            
+                    input(type="number" class="mybookinput-Class" id="mybudget" name="budget" placeholder="Budget") 
+
+
+                    button.book-btn Find        
+        
+        
+ 
+
+    section.services-container 
+        h2.sectionHeading Our Services 
+        div.service-section  
+            div.services-box.transition-All.T-Class1 
+                div.imgFluid 
+                    img(src="/static/images/card1.jpg") 
+                h2.subText Hotels 
+                p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore maiores iusto minima omnis consectetur. Quasi quidem modi unde molestias dicta ad. Lorem ipsum dolor sit.
+                    button.btn-style.color-btn Book 
+
+
+            div.services-box.transition-All.T-Class2 
+                div.imgFluid 
+                    img(src="/static/images/card5.jpg") 
+                h2.subText Explore Restaurants 
+                p.subPara Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, nostrum quibusdam quas omnis natus facere molestiae doloremque culpa quidem perferendis Lorem ipsum dolor sit amet.
+                     button.btn-style.color-btn Book
+
+            div.services-box.transition-All.T-Class3 
+                div.imgFluid 
+                    img(src="/static/images/card4.jpg") 
+                h2.subText Fun Activities
+                p.subPara Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro mollitia earum, molestias at, id iusto culpa ullam sapiente rerum sint fugiat. Quidem fugit eaque placeat sit accusantium.
+                        button.btn-style.color-btn Book
+
+
+
+
+    section.tour-section
+        h2.sectionHeading Popular Tours  
+        div.cardContainer 
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img1.jpg")    
+                h3.subText India
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img2.jpg")    
+                h3.subText Amsterdam
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img3.jpg")    
+                h3.subText London
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img4.jpg")    
+                h3.subText Japan
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img5.jpg")    
+                h3.subText Paris
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img6.jpg")    
+                h3.subText  Maldives
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            
+    script 
+        include ../static/JS/resp.js  

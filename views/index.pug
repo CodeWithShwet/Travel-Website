@@ -1,0 +1,154 @@
+doctype html
+html
+    head    
+        title The Home Of Adventurers
+        style 
+            include ../static/style.css    
+    body
+        nav.navbar.background
+            div#logo
+                img(src="/static/images/logo4.jpg", alt="site logo")
+            ul.navList  
+                    li #[a(href="/") Home ]     
+                    li #[a(href="/") About ]
+                    li #[a(href="/") Services]
+                    li #[a(href="/") Tours ]
+                    li #[a(href="/") Contact Us]
+            div.rightNav 
+                 <input type="text" name="search" id="search">
+                 <button class="btn-sm color-btn">Search</button> 
+            div.burger 
+                    div.class line            
+                    div.class line            
+                    div.class line            
+                    div.class line    
+
+    section#firstSection.background 
+        div.box-main 
+                h1.text-big The Home Of Adventurers 
+                p.text-small  Go where your heart takes you! 
+
+
+    section.services-container 
+            h2.sectionHeading Our Services 
+            div.service-section  
+                div.services-box.transition-All.T-Class1 
+                    h3.subText Hotels 
+                        div.imgFluid 
+                            img(src="/static/images/card1.jpg") 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore maiores iusto minima omnis consectetur. Quasi quidem modi unde molestias dicta ad.
+                        button.btn-style.color-btn Book
+                div.services-box.transition-All.T-Class2 
+                    h3.subText Explore Restaurants
+                        div.imgFluid 
+                            img(src="/static/images/card5.jpg") 
+                    p.subPara Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, nostrum quibusdam quas omnis natus facere molestiae doloremque culpa quidem perferendis Lorem ipsum dolor sit amet.
+                        button.btn-style.color-btn Book
+                div.services-box.transition-All.T-Class3 
+                    h3.subText Fun Activities
+                        div.imgFluid 
+                            img(src="/static/images/card4.jpg") 
+                    p.subPara Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro mollitia earum, molestias at, id iusto culpa ullam sapiente rerum sint fugiat. Quidem fugit eaque placeat sit accusantium.
+                         button.btn-style.color-btn Book
+
+
+
+
+    section#tour-section 
+        h2.sectionHeading Popular Tours 
+        div.cardContainer 
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img1.jpg")    
+                h3.subText India
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img2.jpg")    
+                h3.subText Amsterdam
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img3.jpg")    
+                h3.subText London
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img4.jpg")    
+                h3.subText Japan
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img5.jpg")    
+                h3.subText Paris
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+
+            div.tourCard
+                div.tour-img  
+                    div.imgBox
+                        img(src="/static/images/img6.jpg")    
+                h3.subText  Maldives
+                div.tourcard-content 
+                    p.subPara Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum numquam minima dolorem nihil consequatur quasi odio, reiciendis dolor alias, eos eligendi eveniet quidem aspernatur.   
+                button.btn-style.color-btn Visit 
+        
+
+    footer#footer
+        div.footer-top 
+            div.contact-info
+                p.info-text For More Information Contact -
+                p.info-text 
+                    <i class="fa-solid fa-phone info-icon"></i>  123-456-8989 
+                p.info-text 
+                    <i class="fa-solid fa-envelope info-icon"></i> www.thehomeofadventurers.com 
+                   	
+
+            div.newsletter 
+                div.newsletter-info 
+                    p.info-text Subscribe to our newsletter for more travel and tour updates! 
+                    form(action="/contact", method="post", class="myForm") 
+                    input(type="text" class="myinput" name="email" id="email" placeholder="Enter your email")
+                    button.btn-submit.color-btn Submit 
+
+        div.socials 
+            div.social-Box 
+            div.social-icon 
+                ul.social-list 
+                    li.icon-style 
+                        a(href="https://www.facebook.com")
+                            <i class="fa-brands fa-facebook icon-size"></i>
+
+                    li.icon-style
+                        a(href="https://www.instagram.com")         
+                            <i class="fa-brands fa-instagram icon-size"></i>
+
+                    li.icon-style 
+                        a(href="https://www.twitter.com")         
+                            <i class="fa-brands fa-square-x-twitter icon-size"></i>
+
+
+                        
+        hr.line-break    
+        div.footer-bottom 
+            p Copyright &copy; 2023 - www.thehomeofadventurers.com - All Rights Reserved             
+    
+            
